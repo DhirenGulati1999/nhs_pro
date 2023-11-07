@@ -1,4 +1,4 @@
-import AcmeLogo from '@/app/ui/acme-logo';
+"use client"
 
 import Link from 'next/link';
 export default function Page() {
