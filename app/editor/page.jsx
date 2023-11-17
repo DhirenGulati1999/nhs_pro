@@ -4,6 +4,8 @@ import { useState } from 'react'
 import { Grid, GridColumn } from "@progress/kendo-react-grid";
 import { DropDownList } from "@progress/kendo-react-dropdowns";
 import products from "./products.json";
+import '@progress/kendo-theme-default/dist/all.css';
+import { Button } from "@progress/kendo-react-buttons";
 import categories from "./categories.json";
 const {
     Bold,
@@ -39,6 +41,10 @@ export default function Counter() {
     dataItemKey="CategoryID"
     textField="CategoryName"
   />
+              <Button primary={true}>
+                My Button with KendoReact styles
+            </Button>
+
 </p></>
 )
 }

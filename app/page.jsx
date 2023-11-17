@@ -1,6 +1,17 @@
 "use client"
 
 import Link from 'next/link';
+import { DropDownButton } from "@progress/kendo-react-buttons";
+import '@progress/kendo-theme-default/dist/all.css'; 
+
+const items = [
+  "My Profile",
+  "Friend Requests",
+  "Account Settings",
+  "Support",
+  "Log Out",
+];
+
 export default function Page() {
   return (
     <main className="flex min-h-screen flex-col p-6">
@@ -23,6 +34,11 @@ export default function Page() {
             <span>Log in</span>
           </Link>
         </div>
+        <DropDownButton
+          text="User Settings"
+          items={items}
+          themeColor={"secondary"}
+        />
         <div className="flex items-center justify-center p-6 md:w-3/5 md:px-28 md:py-12">
           {/* Add Hero Images Here */}
         </div>
